@@ -1,19 +1,19 @@
 # Explore
 #### 1. What will happen at line 12 and why? If the code causes an error, explain why.
 
-    Line 12 will just return the value of i at the end of the for loop iteration. i will be equal to the length of prices.
+    Line 12 will just return the value of i at the end of the for loop iteration. It will be equal to the length of prices.It prints 3.
 
 #### 2. What will happen at line 13 and why? If the code causes an error, explain why.
 
     discountedPrice would return the calculation of prices[i] * (1-discount) for when i = prices.length-1. In this case it would be 300*(1-0.5) = 150.
 
-#### 3. What will happen at line 13 and why? If the code causes an error, explain why. 
+#### 3. What will happen at line 14 and why? If the code causes an error, explain why. 
 
     finalPrice rounds discountedPrice to the second decimal place, but it will still be printed as an integer, 150.
 
 #### 4. What will this function return? Give a brief explanation why. If the code causes an error, explain why
 
-    The final output is an array called discounted that stores all the items and their discounted price. We take the original prices of all the items, do the math to calculate the discounted price. Store discounted price of each item into discountedPrice variable, then round it and store it into finalPrice. Then we push it into the discounted array. Once all the item prices are calculated, we return it.
+    The final output is an array called discounted that stores all the items and their discounted price. We take the original prices of all the items, do the math to calculate the discounted price. Store discounted price of each item into discountedPrice variable, then round it and store it into finalPrice. Then we push it into the discounted array. Once all the item prices are calculated, we return it. It returns [50, 100, 150].
 
 ##### 5. What will happen at line 12 and why?  If the code causes an error, explain why. ^^^ (assume this function is being called like the others: discountPrices([100, 200, 300], 0.5)).
 
@@ -25,12 +25,11 @@
 
 #### 7. What will happen at line 14 and why? If the code causes an error, explain why.
 
-    An error will occur since finalPrice is only defined inside the for loop, we cannot access it outside for loop.
-
+    Since the console.log statement is inside the function and it is in the same scope as where the finalPrice is declared, we are able to access it. That means line 14 will print 0.
 
 #### 8. What will this function return? Give a brief explanation. If the code causes an error, explain why.
 
-    The function will return the same result as question 4. It will calculate the discounted price of each item in the prices array and return it through discounted array.
+    The function will return the same result as question 4. It will calculate the discounted price of each item in the prices array and return it through discounted array. It returns [50, 100, 150].
 
 #### 9. What will happen at line 11 and why? If the code causes an error, explain why.
 
@@ -38,11 +37,11 @@
 
 #### 10. What will happen at line 11 and why? If the code causes an error, explain why.
 
-    Line 12 will return the length of prices array.
+    Line 12 will return the length of prices array, 3.
 
 #### 11. What will this function return? Give a brief explanation. If the code causes an error, explain why.
 
-    The code will successfully calculate and return the list of discounted prices given their original prices for all items. (Same as question 4 and 8).
+    The code will successfully calculate and return the list of discounted prices given their original prices for all items. (Same as question 4 and 8). It returns [50, 100, 150].
 
 #### 12. Given the above Object, write the notation for:  (These should be in your part2.md)
 #### A. Accessing the value of the name property in the student object
@@ -59,7 +58,7 @@
 
 #### D. Accessing the name property of the object in the Favorite Teacher property in student
 
-    student.favoriteTeacher.name
+    student["Favorite Teacher"].name
 
 #### E. Access index zero in the array of the courseLoad property of the student object
 
@@ -68,7 +67,7 @@
 #### 13. Arithmetic
 #### A. '3' + 2
 
-    Output = 32. The operation concatnated string '3' and 2 after it. It converted 2 to a string
+    Output = '32'. The operation concatnated string '3' and 2 after it. It converted 2 to a string
 
 #### B. '3' - 2
 
@@ -80,7 +79,7 @@
 
 #### D. '3' + null
 
-    Output = 3null. Here, null was converted to a string and concatnated with '3'.
+    Output = '3null'. Here, null was converted to a string and concatnated with '3'.
 
 #### E. true + 3
 
@@ -92,7 +91,7 @@
 
 #### G. '3' + undefined
 
-    Output = 3undefined. Since there is no integer value that defines undefined, we treat it as a string and concatnate it to '3'.
+    Output = '3undefined'. Since there is no integer value that defines undefined, we treat it as a string and concatnate it to '3'.
 
 #### H. '3' - undefined
 
