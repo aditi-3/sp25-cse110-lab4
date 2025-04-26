@@ -10,7 +10,7 @@
 
 #### 3. Why should you not use var? Explain why. 
 
-    `var` cannot be block-local or loop-local which means it works similar to a global variable. It prevents block-visibility, and prevents private variables. Everyone will beable to access everything.
+    `var` cannot be block-local or loop-local which means it works similar to a global variable. It prevents block-visibility, and prevents private variables. Everyone will be able to access everything and there will be errors when trying to reuse variable names.
 
 #### 4. What is printed by line 9? If the code returns an error, explain why.
 
